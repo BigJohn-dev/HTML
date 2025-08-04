@@ -7,36 +7,131 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <span class="navBar_links">
-        <img src="./images/travels.png" alt="Konga Travel Icon" width="7%">
-        <img src="./images/konga_pay.png" alt="Konga Pay Icon" width="7%">
-        <img src="./images/new_konga_drinks.png" alt="Konga Drinks Icon" width="7%">
-        <img src="./images/konga_health.png" alt="Konga Health Icon" width="7%">
-        <img src="./images/k_logistic.png" alt="Konga Logistics Icon" width="7%">
-        <img src="./images/new_konga_groceries.png" alt="Konga Groceries Icon" width="7%">
-        <img src="./images/kongaTV.png" alt="Konga Tv Icon" width="7%">
-        <img src="./images/KongaNow.png" alt="Konga Now Icon" width="7%">
-    </span>
-    <nav class="navbar">
-        <img src="./images/kongalogo.png" alt="Konga Logo" width="10%">
-        <form>
-            <button type="button">Store Locator</button>
-            <button type="button">Sell on Konga</button>
+    <!-- <div class="topbar">
+        <img
+        src="https://www-konga-com-res.cloudinary.com/image/upload/f_auto,fl_lossy,dpr_auto,q_auto,w_3840//v1754049949/contentservice/Website_banner.gif_RdVBSnuxE.gif" 
+        alt="Konga Back to School Campaign" width="2000%"> -->
+    </div>
+    <div class="navBar_links">
+        <img class="pointer" src="./images/travels.png" alt="Konga Travel Icon" width="6%">
+        <img class="pointer" src="./images/konga_pay.png" alt="Konga Pay Icon" width="6%">
+        <img class="pointer" src="./images/new_konga_drinks.png" alt="Konga Drinks Icon" width="6%">
+        <img class="pointer" src="./images/konga_health.png" alt="Konga Health Icon" width="6%">
+        <img class="pointer" src="./images/k_logistic.png" alt="Konga Logistics Icon" width="6%">
+        <img class="pointer" src="./images/new_konga_groceries.png" alt="Konga Groceries Icon" width="6%">
+        <img class="pointer" src="./images/kongaTV.png" alt="Konga Tv Icon" width="6%">
+        <img class="pointer" src="./images/KongaNow.png" alt="Konga Now Icon" width="6%">
+    </div>
+    <div class="displayline2">
+        <nav class="navbar">
+            <img class="pointer" src="./images/kongalogo.png" alt="Konga Logo" width="10%">
+            <button class="pointer" type="storebutton">Store Locator</button>
+            <button class="pointer" type="sellbutton">Sell on Konga</button>
             <input type="text" placeholder="Search for products, brands and Cartegories...">
-            <button type="submit">Search</button>
+            <button class="pointer" type="searchbutton">Search</button>
+            <form class="navbar-dropdown">
+                <select>
+                    <option value="help">help</option>
+                    <option value="helpcenter">Help Center</option>
+                    <option value="contactUs">Contact Us</option>
+                    <option value="TakeMyOrder">Take My Order</option>
+                    <option value="KongaRP">Konga Return Policy</option>
+                    <option value="faqs">FAQs</option>
+                    <option value="storelocator">Store Locator</option>
+                    <option value="sellOnKonga">Sell On Konga</option>
+                </select>
+            </form>
+        </nav>
+    </div>
+    <div class="insdeNavBar">
+        <form class="buttoneffect">
+            <button class="menueffect" name="pagemenu">All Cartegories</button>
+            <button class="menueffect" name="pagemenu">Computers and Accesories</button>
+            <button class="menueffect" name="pagemenu">Phones and Tablets</button>
+            <button class="menueffect" name="pagemenu">Electronics</button>
+            <button class="menueffect" name="pagemenu">Konga Fashion</button>
+            <button class="menueffect" name="pagemenu">Home and Kitchen</button>
+            <button class="menueffect" name="pagemenu">Baby, Kids and Toys</button>
+            <button class="menueffect" name="pagemenu">Beauty, Health & Personal Care</button>
         </form>
-        <form>
-            <select>
-                <option value="help">help</option>
-                <option value="helpcenter">Help Center</option>
-                <option value="contactUs">Contact Us</option>
-                <option value="TakeMyOrder">Take My Order</option>
-                <option value="KongaRP">Konga Return Policy</option>
-                <option value="faqs">FAQs</option>
-                <option value="storelocator">Store Locator</option>
-                <option value="sellOnKonga">Sell On Konga</option>
-            </select>
-        </form>
-    </nav>
+    </div>
+
+    <div class="slideshow-container">
+        <input type="radio" name="slideshow">
+        <div class="slideshow">
+            <div class="slide">
+                <img src="./images/Back to school.png" alt="Back to school premium">
+            </div>
+            <div class="slide">
+                <img src="./images/shop_phones.png" alt="phone sales premium">
+            </div>
+            <div class="slide">
+                <img src="./images/Beauty_week.png" alt="beauty week poster">
+            </div>
+            <div class="slide">
+                <img src="./images/star_link.png" alt="star_link ads">
+            </div>
+            <div class="slide">
+                <img src="./images/Eco_flow.png" alt="reliable power ads">
+            </div>
+            <div class="slide">
+                <img src="./images/smart_phone.png" alt="smart_phone ads">
+            </div>
+            <div class="slide">
+                <img src="./images/k sneakers.png" alt="sneakers ads">
+            </div>
+            <div class="slide">
+                <img src="./images/Lg.png" alt="LG's ads">
+            </div>
+        </div>
+    </div>
+    <div class="advertimages">
+        <img src="./images/pos_poster.png" alt="Konga pay ads" width="200%">
+        <img src="./images/contact_poster.png" alt="contact us poster" width="200%"><br>
+        <img src="./images/Brighten everyday.png" alt="promo package" width="200%">
+        <img src="./images/access 1.png" alt="access bank ads" width="200%">
+    </div>
+    <div class="bottom-page">
+        <nav class="headers">
+            <p class="lightup">ABOUT KONGA</p>
+            <p class="lightup">PAYMENT</p>
+            <p class="lightup">BUYING ON KONGA</p>
+            <p class="lightup">MORE INFO</p>
+            <p class="lightup">MAKE MONEY ON KONGA</p>
+        </nav>
+    </div>
+        <div class="subclass">
+            <nav>
+                <p class="lightup">Contact Us</p>
+                <p class="lightup">About Us</p>
+                <p class="lightup">Careers</p>
+                <p class="lightup">Our Blog</p>
+                <p class="lightup">Forum</p>
+                <p class="lightup">Terms & Condition</p>
+            </nav>
+            <nav>
+                <p class="lightup">KongaPay</p>
+                <p class="lightup">Wallet</p>
+                <p class="lightup">Verve</p>
+                <p class="lightup">Mastercard</p>
+                <p class="lightup">Visa</p>
+            </nav>
+            <nav>
+                <p class="lightup">Buyer Safety Center</p>
+                <p class="lightup">FAQs</p>
+                <p class="lightup">Delivery</p>
+                <p class="lightup">Konga Return Policy</p>
+                <p class="lightup">Bulk Purchase</p>
+            </nav>
+            <nav>
+                <p class="lightup">Site Map</p>
+                <p class="lightup">Track My Order</p>
+                <p class="lightup">Privacy Policy</p>
+                <p class="lightup">Authentic Items Policy</p>
+            </nav>
+            <nav>
+                <p class="lightup">Become a Konga Affiliate</p>
+            </nav>
+        </div>
 </body>
 </html>

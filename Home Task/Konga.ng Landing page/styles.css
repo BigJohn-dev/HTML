@@ -1,23 +1,131 @@
-/* * {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: black;
-} */
-
-.navbar{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:35px;
-    height: 100px;
-    background-color: rgba(255, 0, 98, 0.795);
-    /* justify-content: space-between; */
 }
+
+.pointer{
+    cursor: pointer;
+}
+
+.topbar {
+    display: flex;
+    gap: 20px;
+    height: 68px;
+    cursor: pointer;
+}
+
 .navBar_links {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    background-color: rgba(128, 128, 128, 0.075);
+    gap: 30px;
     height: 25px;
     align-items: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(237, 1, 127);
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.navbar-dropdown select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.insdeNavBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(143, 0, 76);
+    gap: 15px;
+    height: 60px;
+    border: none;
+}
+.buttoneffect {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 10px;
+    overflow-x: auto;
+}
+.menueffect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 16px;
+    height: 45px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    vertical-align: top;
+}
+.menueffect:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.advertimages{
+    display: flex;
+    align-content: right;
+    justify-items: right;
+    width: 10%;
+    height: 10%;
+}
+.bottom-page {
+    width: 100%;
+    background: rgb(10, 8, 8);
+    padding: 20px;
+    font-size: 90%;
+    align-items: left;
+}
+
+.headers {
+    display: flex;
+    gap: 30px;
+    align-content: center;
+    /* justify-content: center; */
+}
+
+.subclass {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    background: rgb(10, 8, 8);
+    margin-bottom: 10px;
+    padding-left:20px;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(153, 138, 138);
+    font-size: 1em;
+}
+
+.lightup {
+    color: rgb(153, 138, 138);
+}
+
+.slideshow-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 9s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
 }
