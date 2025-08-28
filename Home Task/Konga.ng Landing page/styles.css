@@ -23,6 +23,7 @@
     height: 25px;
     align-items: center;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -87,13 +88,13 @@
     padding: 20px;
     font-size: 90%;
     align-items: left;
+    margin-top: 40px;
 }
 
 .headers {
     display: flex;
     gap: 30px;
     align-content: center;
-    /* justify-content: center; */
 }
 
 .subclass {
@@ -112,20 +113,341 @@
 .lightup {
     color: rgb(153, 138, 138);
 }
-
-.slideshow-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slides {
+.slideshow img {
     display: flex;
-    width: 300%;
-    animation: slide 9s infinite;
+    position: absolute;
+    width: 66%;
+    height: 66%;
+    opacity: 0;
+    animation: fade 32s infinite;
 }
 
-.slides img {
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 4s; }
+.slideshow img:nth-child(3) { animation-delay: 8s; }
+.slideshow img:nth-child(4) { animation-delay: 12s; }
+.slideshow img:nth-child(5) { animation-delay: 16s; }
+.slideshow img:nth-child(6) { animation-delay: 20s; }
+.slideshow img:nth-child(7) { animation-delay: 24s; }
+.slideshow img:nth-child(8) { animation-delay: 28s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.adspage{
+    display: flex;
+    align-items: flex-start;
+    width: 40px;
+}
+.adimage {
+    margin-left: 900px;
+    display: flex;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.advertimages{
+    gap: 20px;
+}
+
+.KongaTab{
+    display:flex;
+}
+.navtab{
+    display: flex;
+    justify-items: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 40px;
+    overflow-x: auto;
+    height: 50px;
+    background-color: white;
+}
+.navtab img{
+    cursor: pointer;
+}
+.navtab button {
+    display: flex;
+    border: 5px solid white;
+    padding: 0;
+    cursor: pointer;
+}
+
+.purplebar {
+    display: flex;
+    background-color: rgb(172, 29, 105);
+    color: white;
+    align-items: flex-start;
+    gap: 25px;
+    padding-left: 10px;
+    height: 45px;
+}
+
+.todaydeal-card1 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    min-width: 80px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+}
+
+/* .todayDeal{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+} */
+
+.todayDeal {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+    min-width: 220px;
+    max-width: 220px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 10px;
+    flex-shrink: 0;
     width: 100%;
-    height: auto;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0 5px;
+    height: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.todaydeal-card1 img {
+    max-width: 60%;
+    height: 60px;
+    object-fit: contain;
+}
+.see{
+    padding-left: 5%;
+    color: rgb(158, 63, 95);
+}
+.sponsored{
+    display: flex;
+    padding-left: 10px;
+}
+
+.pinkbar{
+    display: flex;
+    justify-items: center;
+    background-color: rgb(255, 144, 203);
+    color:black;
+    align-items: flex-start;
+    gap: 25px;
+    padding-left: 10px;
+    height: 45px;
+}
+.tc {
+    padding-left: 50%;
+    color: rgb(158, 63, 95);
+}
+
+.Navbar{
+    display: flex;
+    background-color: rgb(255, 191, 28);
+    justify-content: center;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.storeImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    height: 130px;
+    margin-left: 13px;
+    margin-top: 10px;
+    margin-bottom:420px;
+}
+.storein img{
+    cursor: pointer;
+}
+
+.banner{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 3px;
+}
+
+.product-container2 {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.product-card4 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+}
+
+.product-card4 img {
+    max-width: 120%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.product-rating {
+    color: #f5a623;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.Review {
+    color: #1c1d1f;
+    font-weight: lighter;
+    font-size: 14px;
+
+}
+
+.product-name {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.product-price {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.product-images img {
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.product-old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 12px;
+}
+
+.discount {
+    color: red;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.saving {
+    color: green;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.card1:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
