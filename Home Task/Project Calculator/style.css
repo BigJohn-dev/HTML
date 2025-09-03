@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: rgb(150, 207, 223);
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    height: 495px;
+    width: 435px;
+}
+.calculator form button {
+    border: 0;
+    outline: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 250, 0.2);
+    background: transparent;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    vertical-align: top;
+}
+.calculator button:hover {
+    background: rgba(150, 207, 223, 0.63);
+}
+.calculator button:active {
+    background: rgba(199, 243, 255, 0.63);
+}
+
+form .input-Display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+    border-radius: 25px;
+}
+form .input-Display input{
+    text-align: right;
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+}
+form button.equal-symbol{
+    width: 165px;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+}
+
+form button.operators{
+    color: aqua;
+}
+
+

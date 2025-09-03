@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <form>
+                    <div class="input-Display">
+                        <input id="display" name="display">
+                    </div>
+                    <div>
+                        <button type="button" class="operators" onclick="clearDisplay()">AC</button>
+                        <button type="button" class="operators" onclick="deleteLast()">DE</button>
+                        <button type="button" class="operators" onclick="showInput('.')">.</button>
+                        <button type="button" class="operators" onclick="showInput('/')">/</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="showInput('7')">7</button>
+                        <button type="button" onclick="showInput('8')">8</button>
+                        <button type="button" onclick="showInput('9')">9</button>
+                        <button type="button" class="operators" onclick="showInput('*')">*</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="showInput('4')">4</button>
+                        <button type="button" onclick="showInput('5')">5</button>
+                        <button type="button" onclick="showInput('6')">6</button>
+                        <button type="button" class="operators" onclick="showInput('-')">-</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="showInput('1')">1</button>
+                        <button type="button" onclick="showInput('2')">2</button>
+                        <button type="button" onclick="showInput('3')">3</button>
+                        <button type="button" class="operators" onclick="showInput('+')">+</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="showInput('00')">00</button>
+                        <button type="button" onclick="showInput('0')">0</button>
+                        <button type="button" class="equal-symbol" onclick="calculate()">=</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
