@@ -20,9 +20,12 @@ body{
 .accordion .accordion-title{
     margin-bottom: 30px;
     text-align: center;
+    color: rgb(21, 221, 41);
 }
 
 .accordion .content-container .question{
+    color: rgb(7, 75, 98);
+    font-weight: 600;
     padding: 18px 0px;
     font-size: 20px;
     cursor: pointer;
@@ -36,6 +39,7 @@ body{
     right: -5px;
 }
 .accordion .content-container .answer{
+    color: rgb(7, 75, 98);
     padding-top: 15px;
     font-size: 22px;
     line-height: 1.5;
@@ -47,7 +51,10 @@ body{
 }
 
 .accordion .content-container.active .answer{
-    height: 150px;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    height: 90px;
 }
 .accordion .content-container.active .question{
     font-size: 18px;
